@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IOTSmartStand</string>
+    <string name="message_minutes">Please Enter Minutes...</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="default_time">25:00</string>
+    <string name="button_default">Start</string>
+    <string name="button_reset">Reset</string>
+    <string name="time">%1$s:%2$s</string>
+    <string name="hour_time">%1$s:%2$s:%3$s</string>
+</resources>

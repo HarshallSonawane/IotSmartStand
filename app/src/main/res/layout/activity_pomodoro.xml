@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0C73EB"
+        tools:context=".Pomodoro">
+
+    <TextView
+        android:id="@+id/pomodoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="54dp"
+        android:fontFamily="sans-serif"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Pomodoro Mode"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sand"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/sand"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="33dp"
+        android:src="@drawable/deadline"
+        app:layout_constraintBottom_toTopOf="@+id/pomodoro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/drawable_circle_dark_blue"
+        android:fadeScrollbars="false"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/drawable_circle_yellow"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/default_time"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+        <ImageButton
+            android:id="@+id/resetButton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_round_circle"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/button_reset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/baseline_stop_24" />
+
+        <ImageButton
+            android:id="@+id/resumePauseButton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_round_circle"
+            android:backgroundTint="#F44336"
+            android:contentDescription="@string/button_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/baseline_play_arrow_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
