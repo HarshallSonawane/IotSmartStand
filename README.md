@@ -10,8 +10,6 @@ Team Name : </Reboot Rebels>🔥
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
 
-# Theme : EdTech✅
-
 
 ## Developers🧑‍💻
 
